@@ -1,0 +1,15 @@
+@mixin scrollbar-default {
+	&::-webkit-scrollbar {
+		width: 5px;
+		border-radius: 10px;
+		background-color: black;
+		&-thumb {
+			border-radius: 10px;
+			background-color: gray;
+		}
+	}
+}
+
+@mixin shadow($s, $c) {
+	box-shadow:  0 0 $s $c;
+}

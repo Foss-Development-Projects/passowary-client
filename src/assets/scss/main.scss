@@ -1,0 +1,78 @@
+@use "./tailwind.scss";
+@use './mixins/mixins' as mix;
+
+.container-fluid {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar preview"
+        "navbar navbar";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 50px 1fr 45px;
+    gap: 5px;
+    position: relative;
+}
+
+.header {
+    grid-area: header;
+    @include mix.shadow(5px, gray);
+    h1 {
+        font-family: 'Bruno Ace SC', cursive;
+    }
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: grid;
+    grid-template-rows: 50px 50px calc(100vh - 221px);
+    @include mix.shadow(5px, gray);
+    &-list {
+        overflow: hidden;
+        overflow-y: scroll;
+        @include mix.scrollbar-default;
+    }
+    &-toggle {
+        text-align: right;
+    }
+}
+
+.navbar {
+    grid-area: navbar;
+    @include mix.shadow(5px, gray);
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.preview {
+    grid-area: preview;
+    @include mix.shadow(5px, gray);
+    h2 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: bolder;
+    }
+}
+
+.sidebar-list-item a {
+    display: grid;
+    grid-template-columns: 24px 1fr 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        position: absolute;
+        left: 10px;
+        top: 63px;
+    }
+    .container-fluid {
+         grid-template-areas:
+            "header header"
+            "preview preview"
+            "navbar navbar"
+        ;
+    }
+}
