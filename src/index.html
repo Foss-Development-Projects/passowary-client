@@ -30,6 +30,12 @@
                 >
                     Passowary
                 </h1>
+                <section class="header-section-theme-button">
+                        <input checked.bind="toggleTheme" class="theme-input" type="checkbox" name="theme" id="theme" />
+                        <label for="theme" class="theme-slider bg-slate-100 dark:bg-zinc-700">
+                                <span class="theme-button"></span>
+                        </label>
+                    </section>
                 <img
                     class="w-10 h-10 rounded-full object-cover text-right"
                     src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
@@ -66,7 +72,10 @@
                         >
                             <i class="fa-brands fa-google text-2xl"></i>
                             <p class="font-bold">Google</p>
-                            <i class="fa-solid fa-angle-left"></i>
+                            <button type="button" class="hover:bg-gray-100 hover:text-black rounded-full">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                            
                         </a>
                     </li>
                     <li class="sidebar-list-item px-2 py-0.5">
@@ -76,7 +85,9 @@
                         >
                             <i class="fa-brands fa-microsoft text-2xl"></i>
                             <p class="font-bold">Microsoft</p>
-                            <i class="fa-solid fa-angle-left"></i>
+                            <button type="button" class="hover:bg-gray-100 hover:text-black rounded-full">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
                         </a>
                     </li>
                     <li class="sidebar-list-item px-2 py-0.5">
@@ -86,7 +97,9 @@
                         >
                             <i class="fa-brands fa-facebook text-2xl"></i>
                             <p class="font-bold">Facebook</p>
-                            <i class="fa-solid fa-angle-left"></i>
+                            <button type="button" class="hover:bg-gray-100 hover:text-black rounded-full">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
                         </a>
                     </li>
                     <li class="sidebar-list-item px-2 py-0.5">
@@ -96,7 +109,9 @@
                         >
                             <i class="fa-brands fa-twitter text-2xl"></i>
                             <p class="font-bold">Twitter</p>
-                            <i class="fa-solid fa-angle-left"></i>
+                            <button type="button" class="hover:bg-gray-100 hover:text-black rounded-full">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
                         </a>
                     </li>
                     <li class="sidebar-list-item px-2 py-0.5">
@@ -106,7 +121,9 @@
                         >
                             <i class="fa-brands fa-apple text-2xl"></i>
                             <p class="font-bold">Apple</p>
-                            <i class="fa-solid fa-angle-left"></i>
+                            <button type="button" class="hover:bg-gray-100 hover:text-black rounded-full">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
                         </a>
                     </li>
                     <li class="sidebar-list-item px-2 py-0.5">
@@ -116,14 +133,16 @@
                         >
                             <i class="fa-brands fa-amazon text-2xl"></i>
                             <p class="font-bold">Amazon</p>
-                            <i class="fa-solid fa-angle-left"></i>
+                            <button type="button" class="hover:bg-gray-100 hover:text-black rounded-full">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="preview bg-gray-200 rounded-md">
-                <h2 class="text-lg">Your Passwords</h2>
-                <label class="relative block p-1">
+                <h2 class="text-xl">Your Passwords</h2>
+                <label class="relative block p-1 mt-5">
                     <span class="sr-only">Search</span>
                     <span class="absolute top-4 left-0 flex items-center pl-4">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -142,21 +161,30 @@
                         <a
                             class="transition-colors hover:bg-gray-900 hover:text-white font-bold text-lg flex items-center bg-gray-100 justify-center h-full w-full rounded-md"
                             href="#"
-                            >Home</a
+                            >
+                            <i class="fa-solid fa-home text-sm"></i>
+                            <p class="mx-1">Home</p>
+                            </a
                         >
                     </li>
                     <li class="navbar-list-item h-full w-full p-1">
                         <a
                             class="transition-colors hover:bg-gray-900 hover:text-white font-bold text-lg flex items-center bg-gray-100 justify-center h-full w-full rounded-md"
                             href="#"
-                            >Passwords</a
+                            >
+                            <i class="fa-solid fa-key text-sm"></i>
+                            <p class="mx-1">Passwords</p>
+                            </a
                         >
                     </li>
                     <li class="navbar-list-item h-full w-full p-1">
                         <a
                             class="transition-colors hover:bg-gray-900 hover:text-white font-bold text-lg flex items-center bg-gray-100 justify-center h-full w-full rounded-md"
                             href="#"
-                            >About</a
+                            >
+                            <i class="fa-solid fa-info-circle text-sm"></i>
+                            <p class="mx-1">About</p>
+                            </a
                         >
                     </li>
                 </ul>
