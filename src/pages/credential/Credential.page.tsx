@@ -1,5 +1,5 @@
 import CredentialCard from "../../components/credential-card/CredentialCard.component";
-import Header from "../../components/header/Header.component";
+import Header from "../../components/shared/header/Header.component";
 import Navbar from "../../components/shared/navbar/Navbar.component";
 import Toolbar from "../../components/toolbar/Toolbar.component";
 import CredentialSearch from "../../modules/search/Search.module";
