@@ -1,0 +1,17 @@
+@use "./tailwind.scss";
+* {
+    scrollbar-width: thin;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--foreground-color);
+    transition: color, 200ms ease-in-out;
+}
+html, body, #root {
+    height: 100%;
+}
+.container-fluid {
+    position: relative;
+    padding: 5px;
+}
