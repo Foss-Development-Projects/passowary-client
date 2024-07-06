@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .light {
+        --primary-accent: hsl(263, 87%, 46%);
+        --secondary-accent: hsl(207, 70%, 72%);
+        --foreground-color: hsl(0, 0%, 7%);
+        --background-color: hsl(40, 10%, 94%);
+        --surface-color: hsl(240, 8%, 90%);
+        
+    }
+
+    .night {
+        --primary-accent: hsl(263, 88%, 23%);
+        --secondary-accent: hsl(207, 64%, 50%);
+        --foreground-color: hsl(30, 8%, 95%);
+        --background-color: hsl(0, 0%, 7%);
+        --surface-color: rgba(41, 39, 39, 0.2);
+    }
+}
+
+@layer utilities {
+    .shade {
+        background: var(--surface-color);
+    }
+    .navbar-shade {
+        background: var(--secondary-accent);
+    }
+}
