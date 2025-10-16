@@ -2,9 +2,6 @@
 import ThemeSwitch from '../../../modules/theme-switch/ThemeSwitch.module';
 import Logo from './../../../assets/img/vault.png';
 
-// Stylesheets
-import './header.component.scss';
-
 // Component
 const Header = () => {
     return (
@@ -12,9 +9,9 @@ const Header = () => {
             className="p-3 header rounded-md flex flex-row items-center justify-between"
         >
             <h1
-                className="header-title grid grid-cols-2 gap-x-1.5 items-center text-3xl"
+                className="flex items-center text-3xl"
             >
-                <img className="w-8 h-8 rounded-full object-cover text-right"
+                <img className="w-8 h-8 mr-2 rounded-full object-cover text-right"
                     src={Logo}
                     alt="App Logo" />
                 Vault

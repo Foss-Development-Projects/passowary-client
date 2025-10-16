@@ -1,7 +1,7 @@
-import CredentialCard from "../../components/credential-card/CredentialCard.component";
+import CredentialCard from "../../components/credential/credential-card/CredentialCard.component";
 import Header from "../../components/shared/header/Header.component";
 import Navbar from "../../components/shared/navbar/Navbar.component";
-import Toolbar from "../../components/toolbar/Toolbar.component";
+import Toolbar from "../../components/credential/toolbar/Toolbar.component";
 import CredentialSearch from "../../modules/search/Search.module";
 
 import CardImage from './../../assets/img/sun.png'
@@ -21,8 +21,8 @@ const CredentialPage = () => {
         <div className="container-fluid text-center h-screen p-2">
             <Header />
             <Navbar />
-            <div className="preview rounded-md px-2">
-                <h2 className="my-4 text-2xl font-bold">Your Credentials</h2>
+            <div className="preview rounded-md px-0.5 bg-blue-100/[.06] mx-0.5">
+                <h2 className="my-4 text-2xl font-bold pt-5">Your Credentials</h2>
                 <CredentialSearch />
                 <Toolbar />
                 <ul className="search-item-list mt-2 px-1.5 py-2">

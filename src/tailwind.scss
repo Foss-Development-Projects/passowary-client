@@ -8,7 +8,7 @@
         --secondary-accent: hsl(207, 70%, 72%);
         --foreground-color: hsl(0, 0%, 7%);
         --background-color: hsl(40, 10%, 94%);
-        --surface-color: hsl(240, 8%, 90%);
+        --surface-color: rgba(236, 233, 233, 0.856);
         
     }
 
@@ -27,5 +27,8 @@
     }
     .navbar-shade {
         background: var(--secondary-accent);
+    }
+    .text-color {
+        color: var(--foreground-color);
     }
 }

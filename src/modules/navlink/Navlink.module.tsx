@@ -4,14 +4,12 @@ import { Link } from 'react-router-dom';
 
 // Stylesheets
 
-import './navlink.module.scss';
-
 // Component
 const Navlink = (props: any) => {
     return (
         <li className="h-9 w-full p-0.5">
             <Link
-                className="transition-colors font-bold text-lg flex items-center justify-center px-3 mx-2 h-full rounded-full hover:navbar-shade"
+                className="transition-colors font-bold text-lg flex items-center justify-center px-3 mx-2 h-full rounded-full hover:bg-blue-600 hover:text-gray-100"
                 to={props.href}
             >
                 {props.icon}

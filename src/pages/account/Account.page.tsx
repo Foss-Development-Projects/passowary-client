@@ -8,7 +8,7 @@ const AccountPage = () => {
         <div  className="w-full">
             <Header />
             <Navbar />
-            <div className="px-2.5">
+            <div className="px-2">
                 <AccountNavigationBar />
                 <AccountPreviewPane />
             </div>

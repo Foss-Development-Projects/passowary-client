@@ -26,7 +26,7 @@ const ThemeSwitch = () => {
     const iconSize = 24;
     return (
         <div className="mr-2">
-            <button className="rounded-full dark:text-slate-200 bg-zinc-900 text-slate-200 p-2" onClick={darkModeHandler}>
+            <button type="button" className="rounded-full dark:text-slate-200 bg-zinc-900 text-slate-200 p-2" onClick={darkModeHandler}>
                 
                 { dark && <IoMoon size={iconSize} /> }
                 { !dark && <IoSunny size={iconSize} /> }

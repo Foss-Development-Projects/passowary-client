@@ -15,6 +15,9 @@ export default {
 				fg: "var(--background-color) / <alpha-value>",
 				bg: "var(--foreground-color) / <alpha-value>",
 				sc: "var(--surface-color) / <alpha-value>",
+			},
+			transitionProperty: {
+				'height' : 'height'
 			}
 		},
 	},
